@@ -5,6 +5,7 @@ import Layout from './components/Layout'
 import About from './components/About'
 import Contacto from './components/Contacto'
 import Dashboard from './components/Dashboard'
+import Ubicacion from './components/Ubicacion'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contacto" element={<Contacto />} />
+        <Route path='ubicacion' element={<Ubicacion />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route path="users" element={<p>👤 Usuarios</p>} />
           <Route path="settings" element={<p>⚙️ Configuración</p>} />
