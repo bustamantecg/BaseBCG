@@ -2,7 +2,7 @@ import tiendaImg from '../../assets/img/tienda.jpg';
 import tiendaImg02 from '../../assets/img/tienda02.jpg';
 import tiendaImg03 from '../../assets/img/tienda03.jpg';
 import tiendaImg04 from '../../assets/img/tienda04.jpg';
-import tiendaImg05 from '../../assets/img/tienda05.jpg';
+
 
 const About = () => {
   return (
@@ -45,8 +45,7 @@ const About = () => {
                 tiendaImg,
                 tiendaImg02,
                 tiendaImg03,
-                tiendaImg04,
-                tiendaImg05,
+                tiendaImg04,                
               ].map((src, index) => (
                 <div className="carousel-item" key={index}>
                   <img
@@ -57,11 +56,9 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </div>
-          
+          </div>          
         </div>
-      </div>
-      
+      </div>      
     </div>
   );
 };

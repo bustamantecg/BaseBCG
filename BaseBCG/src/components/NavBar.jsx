@@ -24,9 +24,10 @@ const NavBar = () => {
                             <ul className="p-2">
                                 <li><a>Catálogo</a></li>
                                 <li><a>Ofertas</a></li>
+                                <li><a>Administrar</a></li>
                             </ul>
                         </li>
-                        <li><a>Proximamente</a></li>
+                        <li><Link className="link link-hover" to="/proximamente">Proximamente</Link></li>
                         <li><a>Carrito</a></li>
                     </ul>
                 </div>
@@ -41,10 +42,11 @@ const NavBar = () => {
                             <ul className="p-2">
                                 <li><a>Catálogo</a></li>
                                 <li><a>Ofertas</a></li>
+                                <li><a>Administrar</a></li>
                             </ul>
                         </details>
                     </li>
-                    <li><a>Proximamente</a></li>
+                    <li><Link className="link link-hover" to="/proximamente">Proximamente</Link></li>
                     <li><a>Carrito</a></li>
                 </ul>
             </div>

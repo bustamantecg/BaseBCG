@@ -1,14 +1,19 @@
-import { Outlet, Link } from "react-router-dom"
+import Proximamente from "./Proximamente"
+import About from "./About"
+import Contacto from "./Contacto"
+import NuestroCatalogo from "./NuestroCatalogo"
 
 const Dashboard = () => {
   return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold mb-2">📊 Dashboard</h2>
-      <nav className="mb-4">
-        <Link to="users" className="btn btn-outline btn-sm mr-2">Usuarios</Link>
-        <Link to="settings" className="btn btn-outline btn-sm">Configuración</Link>
-      </nav>
-      <Outlet />
+    <div className="p-4">    
+      
+      <About />
+      <div className="divider divider-info"><i class="bi bi-star-fill"></i></div>
+      <NuestroCatalogo />  
+      <div className="divider divider-info"><i class="bi bi-star-fill"></i></div>
+      <Contacto />
+      <div className="divider divider-info"><i class="bi bi-star-fill"></i></div>
+      <Proximamente />
     </div>
   )
 }

@@ -1,13 +1,11 @@
 
 import { useNavigate } from "react-router-dom";
-import Articulos from '../components/articulos/Articulos'
+import Dashboard from "./estaticos/Dashboard";
 
 const Home = () => {
-  const navigate = useNavigate();
-
   return (
     <>
-      <Articulos />     
+      <Dashboard />     
     </>
   );
 };

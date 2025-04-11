@@ -8,7 +8,8 @@ import About from './components/estaticos/About'
 import Contacto from './components/estaticos/Contacto'
 import Dashboard from './components/estaticos/Dashboard'
 import Ubicacion from './components/estaticos/Ubicacion'
-
+import Proximamente from './components/estaticos/Proximamente';
+import NuestroCatalogo from './components/estaticos/NuestroCatalogo';
 
 function App() {
   return (
@@ -19,10 +20,9 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path='ubicacion' element={<Ubicacion />} />
-        <Route path="dashboard" element={<Dashboard />}>
-          <Route path="users" element={<p>👤 Usuarios</p>} />
-          <Route path="settings" element={<p>⚙️ Configuración</p>} />
-        </Route>
+        <Route path='proximamente' element={<Proximamente />} />
+        <Route path="dashboard" element={<Dashboard />}/>
+        <Route path='nuestrocatalogo' element={<NuestroCatalogo />} />
       </Route>
     </Routes>
     <ToastContainer />
