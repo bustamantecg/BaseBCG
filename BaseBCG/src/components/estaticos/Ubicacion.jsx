@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import ArticuloTarjeta from "../articulos/ArticuloTarjeta";
+import ArticuloTarjeta02 from "../articulos/ArticuloTarjeta02";
 
 const Ubicacion = () => {
   return (
@@ -24,6 +26,9 @@ const Ubicacion = () => {
             <Link className="btn btn-primary btn-wide cursor-pointer" to="/contacto">
                <i class="bi bi-person-lines-fill"></i>Contáctanos
             </Link>  
+            <ArticuloTarjeta />
+
+            <ArticuloTarjeta02 />
           </div>
 
           {/* Mapa de Google */}

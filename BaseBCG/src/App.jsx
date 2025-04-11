@@ -1,11 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './index.css'
 import Home from './components/Home'
 import Layout from './components/Layout'
-import About from './components/About'
-import Contacto from './components/Contacto'
-import Dashboard from './components/Dashboard'
-import Ubicacion from './components/Ubicacion'
+import About from './components/estaticos/About'
+import Contacto from './components/estaticos/Contacto'
+import Dashboard from './components/estaticos/Dashboard'
+import Ubicacion from './components/estaticos/Ubicacion'
+
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
         </Route>
       </Route>
     </Routes>
+    <ToastContainer />
     </>
   )
 }
